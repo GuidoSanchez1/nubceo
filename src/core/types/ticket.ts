@@ -11,6 +11,7 @@ export interface Ticket {
     customerName: string;
     subject: string;
     status: TicketStatus;
+    createdAt: string;
     messages: Message[];
 }
 
