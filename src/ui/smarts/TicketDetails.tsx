@@ -27,7 +27,6 @@ export const TicketDetails = ({ ticket }: TicketDetailsProps) => {
                     id: uuidv4(),
                     content: data.message,
                     createdAt: new Date().toISOString(),
-                    fromCustomer: false,
                 },
             })
         );
@@ -62,7 +61,7 @@ export const TicketDetails = ({ ticket }: TicketDetailsProps) => {
                         <h3 className="text-lg font-semibold text-gray-200">Responder</h3>
                         <textarea
                             {...register('message', { required: true, minLength: 10 })}
-                            className="w-full bg-gray-700 text-white p-2 rounded max-h-50"
+                            className="w-full bg-gray-700 text-white p-2 rounded max-h-50 min-h-20"
                             placeholder="Escribí tu respuesta..."
                         />
                         {errors.message && (

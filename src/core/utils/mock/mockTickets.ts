@@ -1,252 +1,158 @@
 import type { Ticket } from "../../types/ticket";
 
-
 export const mockTickets: Ticket[] = [
     {
         id: '1',
         customerName: 'John Doe',
-        subject: 'Issue with product',
+        subject: 'Problema con el producto',
         status: 'open',
         createdAt: '2025-05-12T12:00:00Z',
         messages: [
             {
-                id: 'msg1',
-                content: 'I am having an issue with the product I purchased.',
-                createdAt: '2025-05-12T12:00:00Z',
-                fromCustomer: true
-            },
-            {
                 id: 'msg2',
-                content: 'Can you please provide more details?',
+                content: 'Se solicitó más información al cliente para poder identificar el problema con el producto.',
                 createdAt: '2025-05-12T12:05:00Z',
-                fromCustomer: false
             }
         ]
     },
     {
         id: '2',
         customerName: 'Jane Smith',
-        subject: 'Billing question',
+        subject: 'Consulta de facturación',
         status: 'closed',
         createdAt: '2025-06-11T14:00:00Z',
         messages: [
             {
-                id: 'msg1',
-                content: 'I have a question about my last bill.',
-                createdAt: '2025-06-11T14:00:00Z',
-                fromCustomer: true
-            },
-            {
                 id: 'msg2',
-                content: 'Your billing issue has been resolved.',
+                content: 'El problema de facturación fue revisado y corregido satisfactoriamente.',
                 createdAt: '2025-06-11T14:15:00Z',
-                fromCustomer: false
             }
         ]
-
     },
     {
         id: '3',
         customerName: 'Alice Johnson',
-        subject: 'Feedback on service',
+        subject: 'Comentarios sobre el servicio',
         status: 'open',
         createdAt: '2025-06-17T09:00:00Z',
         messages: [
             {
-                id: 'msg1',
-                content: 'I would like to provide feedback on your service.',
-                createdAt: '2025-06-17T09:00:00Z',
-                fromCustomer: true
-            },
-            {
                 id: 'msg2',
-                content: 'Thank you for your feedback!',
+                content: 'Se agradeció al cliente por su retroalimentación y se documentaron los comentarios.',
                 createdAt: '2025-06-17T09:05:00Z',
-                fromCustomer: false
             }
         ]
     },
     {
         id: '4',
         customerName: 'Bob Brown',
-        subject: 'Technical support needed',
+        subject: 'Soporte técnico necesario',
         status: 'open',
         createdAt: '2025-06-17T11:00:00Z',
         messages: [
             {
-                id: 'msg1',
-                content: 'I need technical support for my device.',
-                createdAt: '2025-06-17T11:00:00Z',
-                fromCustomer: true
-            },
-            {
                 id: 'msg2',
-                content: 'Please provide the model number of your device.',
+                content: 'Se solicitó al cliente el número de modelo del dispositivo para poder brindar soporte técnico adecuado.',
                 createdAt: '2025-06-17T11:10:00Z',
-                fromCustomer: false
             }
         ]
     },
     {
         id: '5',
         customerName: 'Charlie Green',
-        subject: 'Order status inquiry',
+        subject: 'Consulta sobre el estado del pedido',
         status: 'closed',
         createdAt: '2025-06-26T08:00:00Z',
         messages: [
             {
-                id: 'msg1',
-                content: 'What is the status of my order?',
-                createdAt: '2025-06-26T08:00:00Z',
-                fromCustomer: true
-            },
-            {
                 id: 'msg2',
-                content: 'Your order has been shipped.',
+                content: 'Se confirmó que el pedido del cliente ya había sido enviado.',
                 createdAt: '2025-06-26T08:20:00Z',
-                fromCustomer: false
             }
         ]
     },
     {
         id: '6',
         customerName: 'Diana Prince',
-        subject: 'Account login issue',
+        subject: 'Problema para iniciar sesión en la cuenta',
         status: 'open',
         createdAt: '2025-06-29T10:30:00Z',
         messages: [
             {
-                id: 'msg1',
-                content: 'I cannot log into my account with my usual credentials.',
-                createdAt: '2025-06-29T10:30:00Z',
-                fromCustomer: true
-            },
-            {
                 id: 'msg2',
-                content: 'Have you tried resetting your password?',
+                content: 'Se sugirió al cliente intentar restablecer su contraseña para resolver el problema de acceso.',
                 createdAt: '2025-06-29T10:45:00Z',
-                fromCustomer: false
             }
         ]
     },
     {
         id: '7',
         customerName: 'Ethan Hunt',
-        subject: 'Refund request',
+        subject: 'Solicitud de reembolso',
         status: 'closed',
         createdAt: '2025-06-30T13:00:00Z',
         messages: [
             {
-                id: 'msg1',
-                content: 'I would like to request a refund for my recent purchase.',
-                createdAt: '2025-06-30T13:00:00Z',
-                fromCustomer: true
-            },
-            {
                 id: 'msg2',
-                content: 'Your refund has been processed successfully.',
+                content: 'Se procesó correctamente el reembolso solicitado por el cliente.',
                 createdAt: '2025-06-30T13:30:00Z',
-                fromCustomer: false
             }
         ]
     },
     {
         id: '8',
         customerName: 'Fiona Gallagher',
-        subject: 'App crashing on startup',
+        subject: 'La app se cierra al iniciar',
         status: 'open',
         createdAt: '2025-07-10T07:50:00Z',
         messages: [
             {
-                id: 'msg1',
-                content: 'The app crashes every time I try to open it.',
-                createdAt: '2025-07-10T07:50:00Z',
-                fromCustomer: true
-            },
-            {
                 id: 'msg2',
-                content: 'Please let us know your OS version and device model.',
+                content: 'Se pidió al cliente que informara la versión del sistema operativo y el modelo del dispositivo para investigar el fallo.',
                 createdAt: '2025-07-10T08:00:00Z',
-                fromCustomer: false
-            },
-            {
-                id: 'msg3',
-                content: 'The app crashes every time I try to open it.',
-                createdAt: '2025-07-10T07:50:00Z',
-                fromCustomer: true
             },
             {
                 id: 'msg4',
-                content: 'Please let us know your OS version and device model.',
+                content: 'Se reiteró la solicitud de datos técnicos debido a mensajes repetidos del cliente.',
                 createdAt: '2025-07-10T08:00:00Z',
-                fromCustomer: false
-            },
-            {
-                id: 'msg5',
-                content: 'The app crashes every time I try to open it.',
-                createdAt: '2025-07-10T07:50:00Z',
-                fromCustomer: true
             },
             {
                 id: 'msg6',
-                content: 'Please let us know your OS version and device model.',
+                content: 'Se volvió a solicitar la información técnica por tercera vez sin respuesta clara.',
                 createdAt: '2025-07-10T08:00:00Z',
-                fromCustomer: false
-            },
-            {
-                id: 'msg7',
-                content: 'The app crashes every time I try to open it. The app crashes every time I try to open it.The app crashes every time I try to open it.The app crashes every time I try to open it.The app crashes every time I try to open it.The app crashes every time I try to open it.',
-                createdAt: '2025-07-10T07:50:00Z',
-                fromCustomer: true
             },
             {
                 id: 'msg8',
-                content: 'Please let us know your OS version and device model.',
+                content: 'Se reiteró la necesidad de recibir los datos técnicos para poder escalar el caso al equipo correspondiente.',
                 createdAt: '2025-07-10T08:00:00Z',
-                fromCustomer: false
-            },
-
+            }
         ]
     },
     {
         id: '9',
         customerName: 'George Lucas',
-        subject: 'Change email address',
+        subject: 'Cambiar dirección de correo electrónico',
         status: 'closed',
         createdAt: '2025-07-11T16:10:00Z',
         messages: [
             {
-                id: 'msg1',
-                content: 'I need to update my email address on file.',
-                createdAt: '2025-07-11T16:10:00Z',
-                fromCustomer: true
-            },
-            {
                 id: 'msg2',
-                content: 'Your email has been updated successfully.',
+                content: 'Se actualizó exitosamente la dirección de correo electrónico del cliente en el sistema.',
                 createdAt: '2025-07-11T16:25:00Z',
-                fromCustomer: false
             }
         ]
     },
     {
         id: '10',
         customerName: 'Helen Mirren',
-        subject: 'Feature request',
+        subject: 'Solicitud de funcionalidad',
         status: 'open',
         createdAt: '2025-07-12T19:00:00Z',
         messages: [
             {
-                id: 'msg1',
-                content: 'I would love to see a dark mode feature.',
-                createdAt: '2025-07-12T19:00:00Z',
-                fromCustomer: true
-            },
-            {
                 id: 'msg2',
-                content: 'Thanks for the suggestion! We’ve forwarded it to our product team.',
+                content: 'Se registró la sugerencia del cliente sobre el modo oscuro y fue enviada al equipo de producto.',
                 createdAt: '2025-07-12T19:15:00Z',
-                fromCustomer: false
             }
         ]
     }

@@ -4,7 +4,6 @@ export interface Message {
     id: string;
     content: string;
     createdAt: string;
-    fromCustomer: boolean
 }
 
 export interface Ticket {

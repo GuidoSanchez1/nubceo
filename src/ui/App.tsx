@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { store, type RootState } from '../core/redux/store';
-import { TicketCard } from './smarts/TicketCard'
+import { TicketCard } from './dumbs/TicketCard'
 import { SideBar } from './smarts/SideBar'
 import { initialDummyData, selectTicket } from '../core/redux/ticketSlice';
 import './App.css'
@@ -44,7 +44,7 @@ function App() {
             onClick={() => setIsModalOpen(true)}
             className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
           >
-            Abrir modal
+            Crear Nuevo Ticket
           </button>
           <section className="flex flex-col  p-4 overflow-y-auto gap-5">
             {

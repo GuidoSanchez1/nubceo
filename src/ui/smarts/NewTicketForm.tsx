@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { useDispatch } from 'react-redux';
-import { Modal } from './Modal';
+import { Modal } from '../dumbs/Modal';
 import { v4 as uuidv4 } from 'uuid';
 import { addTicket } from '../../core/redux/ticketSlice';
 import { getNextTicketId, setLastTicketId } from '../../core/utils/lastTicketIdStorage';
@@ -36,7 +36,6 @@ export const NewTicketForm = ({ isOpen, onClose }: NewTicketFormModalProps) => {
                     id: uuidv4(),
                     content: message,
                     createdAt: new Date().toISOString(),
-                    fromCustomer: true
                 },
             ],
             createdAt: new Date().toISOString(),
@@ -81,7 +80,7 @@ export const NewTicketForm = ({ isOpen, onClose }: NewTicketFormModalProps) => {
                         name="message"
                         required
                         rows={4}
-                        className="w-full px-3 py-2 rounded bg-gray-700 text-white max-h-50"
+                        className="w-full px-3 py-2 rounded bg-gray-700 text-white max-h-50 min-h-20"
                     />
                 </div>
 
