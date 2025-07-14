@@ -4,6 +4,7 @@ export interface Message {
     id: string;
     content: string;
     createdAt: string;
+    fromCustomer: boolean
 }
 
 export interface Ticket {
@@ -12,16 +13,16 @@ export interface Ticket {
     subject: string;
     status: TicketStatus;
     createdAt: string;
-    messages: Message[];
+    messages: Message[]
 }
 
 export interface ResponderTicketFormValues {
     ticketId: string;
-    message: string;
+    message: string
 }
 
 export interface CrearTicketFormFields {
     customerName: string;
     subject: string;
-    message: string;
+    message: string
 }

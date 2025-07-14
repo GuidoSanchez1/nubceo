@@ -1,8 +1,9 @@
 import { createSlice } from '@reduxjs/toolkit';
 import type { PayloadAction } from '@reduxjs/toolkit';
-import { loadTicketsFromStorage, saveTicketsToStorage } from '../utils/localStorage';
+import { loadTicketsFromStorage, saveTicketsToStorage } from '../utils/ticketsStorage';
 import type { Message, Ticket } from '../types/ticket';
-import { mockTickets } from '../utils/mock/tickets';
+import { mockTickets } from '../utils/mock/mockTickets';
+import { setLastTicketId } from '../utils/lastTicketIdStorage';
 
 interface TicketsState {
     tickets: Ticket[];
@@ -11,7 +12,7 @@ interface TicketsState {
 
 const initialState: TicketsState = {
     tickets: loadTicketsFromStorage(),
-    selectedTicketId: null
+    selectedTicketId: null,
 };
 
 const ticketsSlice = createSlice({
@@ -20,6 +21,8 @@ const ticketsSlice = createSlice({
     reducers: {
         initialDummyData(state) {
             state.tickets = mockTickets;
+            setLastTicketId(mockTickets.length);
+            saveTicketsToStorage(state.tickets);
         },
         addTicket(state, action: PayloadAction<Ticket>) {
             state.tickets.push(action.payload);

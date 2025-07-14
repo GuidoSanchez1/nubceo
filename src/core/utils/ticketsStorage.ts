@@ -10,3 +10,5 @@ export function loadTicketsFromStorage(): Ticket[] {
     const data = localStorage.getItem(STORAGE_KEY);
     return data ? JSON.parse(data) : [];
 }
+
+
