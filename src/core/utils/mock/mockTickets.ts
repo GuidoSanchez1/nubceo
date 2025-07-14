@@ -168,7 +168,44 @@ export const mockTickets: Ticket[] = [
                 content: 'Please let us know your OS version and device model.',
                 createdAt: '2025-07-10T08:00:00Z',
                 fromCustomer: false
-            }
+            },
+            {
+                id: 'msg3',
+                content: 'The app crashes every time I try to open it.',
+                createdAt: '2025-07-10T07:50:00Z',
+                fromCustomer: true
+            },
+            {
+                id: 'msg4',
+                content: 'Please let us know your OS version and device model.',
+                createdAt: '2025-07-10T08:00:00Z',
+                fromCustomer: false
+            },
+            {
+                id: 'msg5',
+                content: 'The app crashes every time I try to open it.',
+                createdAt: '2025-07-10T07:50:00Z',
+                fromCustomer: true
+            },
+            {
+                id: 'msg6',
+                content: 'Please let us know your OS version and device model.',
+                createdAt: '2025-07-10T08:00:00Z',
+                fromCustomer: false
+            },
+            {
+                id: 'msg7',
+                content: 'The app crashes every time I try to open it. The app crashes every time I try to open it.The app crashes every time I try to open it.The app crashes every time I try to open it.The app crashes every time I try to open it.The app crashes every time I try to open it.',
+                createdAt: '2025-07-10T07:50:00Z',
+                fromCustomer: true
+            },
+            {
+                id: 'msg8',
+                content: 'Please let us know your OS version and device model.',
+                createdAt: '2025-07-10T08:00:00Z',
+                fromCustomer: false
+            },
+
         ]
     },
     {

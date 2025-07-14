@@ -4,7 +4,7 @@ export const TicketMessages = ({ messages }: { messages: Message[] }) => {
 
 
     return (
-        <div className="flex-1 overflow-y-auto">
+        <div className="flex flex-1 flex-col overflow-y-scroll max-h-[50vh]">
             <h3 className="text-lg font-semibold mb-3 text-gray-200">Conversación</h3>
             <ul className="flex flex-col gap-4">
                 {messages.map((msg) => (

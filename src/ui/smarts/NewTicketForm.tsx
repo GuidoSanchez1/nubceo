@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { useDispatch } from 'react-redux';
-import { Modal } from '../dumbs/Modal';
+import { Modal } from './Modal';
 import { v4 as uuidv4 } from 'uuid';
 import { addTicket } from '../../core/redux/ticketSlice';
 import { getNextTicketId, setLastTicketId } from '../../core/utils/lastTicketIdStorage';

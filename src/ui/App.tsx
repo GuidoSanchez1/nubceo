@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { store, type RootState } from '../core/redux/store';
-import { TicketCard } from './dumbs/TicketCard'
+import { TicketCard } from './smarts/TicketCard'
 import { SideBar } from './smarts/SideBar'
 import { initialDummyData, selectTicket } from '../core/redux/ticketSlice';
 import './App.css'
